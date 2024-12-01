@@ -1,0 +1,7 @@
+[project]
+name = "higher-lower-game"
+version = "0.1.0"
+description = "This project implements a Higher/Lower card game where players guess whether the next card drawn from the deck will be higher or lower than the current card."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
