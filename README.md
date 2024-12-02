@@ -74,20 +74,18 @@ The `player.py` file defines the classes and logic related to players in the Hig
 
 Let:
 
-- \( C \) be the current card.
-- \( V_C \) be the value of the current card.
-- \( D \) be the deck of remaining cards.
-- \( N \) be the total number of remaining cards in the deck.
-- \( H \) be the number of cards in the deck with a value higher than \( V_C \).
-- \( L \) be the number of cards in the deck with a value lower than \( V_C \).
+- $\( V_C \)$ be the value of the current card.
+- $\( N \)$ be the total number of remaining cards in the deck.
+- $\( H \)$ be the number of cards in the deck with a value higher than $\( V_C \)$.
+- $\( L \)$ be the number of cards in the deck with a value lower than $\( V_C \)$.
 
-The probability \( P_H \) of the next card being higher than the current card is given by:
+The probability $\( P_H \)$ of the next card being higher than the current card is given by:
 
-\[ P_H = \frac{H}{N} \]
+$\[ P_H = \frac{H}{N} \]$
 
-The probability \( P_L \) of the next card being lower than the current card is given by:
+The probability $\( P_L \)$ of the next card being lower than the current card is given by:
 
-\[ P_L = \frac{L}{N} \]
+$\[ P_L = \frac{L}{N} \]$
 
 ## player_factory.py
 The `player_factory.py` file defines the `PlayerFactory` class, which provides a static method for creating instances of `HumanPlayer` and `ComputerPlayer` based on the provided name.
@@ -151,42 +149,3 @@ The shuffle_strategies.py file defines various shuffling strategies that inherit
 4. **Implement a Detailed Statistics and Leaderboard System**
 	- **Action**: Develop a system to track and display detailed statistics for each player, such as win/loss records, average scores, and highest scores. Additionally, create a leaderboard to rank players based on their performance.
 	- **Why**: This feature will add a competitive element to the game, encouraging players to improve their performance and compare their results with others. It will also be a good technical challenge to design and implement a persistent data storage solution, such as using a database or file system, to keep track of player statistics and leaderboard information.
-
-
-# Directory Structure
-
-project_root/
-│
-├── src/
-│   ├── __init__.py
-│   ├── card.py
-│   ├── game_io.py
-│   ├── higher_lower_game.py
-│   ├── players/
-│   │   ├── __init__.py
-│   │   ├── player.py
-│   │   ├── player_factory.py
-│   ├── shuffling/
-│   │   ├── __init__.py
-│   │   ├── shuffle_algorithms.py
-│   │   ├── shuffle_strategies.py
-│   └── main.py
-│
-├── tests/
-│   ├── __init__.py
-│   ├── test_card.py
-│   ├── test_game_io.py
-│   ├── test_higher_lower_game.py
-│   ├── test_players/
-│   │   ├── __init__.py
-│   │   ├── test_player.py
-│   │   ├── test_player_factory.py
-│   ├── test_shuffling/
-│   │   ├── __init__.py
-│   │   ├── test_shuffle_algorithms.py
-│   │   ├── test_shuffle_strategies.py
-│   └── test_main.py
-│
-│
-├── pyproject.toml
-└── README.md
