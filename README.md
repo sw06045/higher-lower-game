@@ -1,6 +1,13 @@
 # Higher-Lower Game
 This project implements a Higher/Lower card game where players guess whether the next card drawn from the deck will be higher or lower than the current card. The game supports both human and computer players, and various shuffling algorithms can be used to shuffle the deck.
 
+# Content
+[Usage](#usage)
+
+[Source Code Documentation](#source-code-documentation)
+
+[Future Improvements](#future-improvements)
+
 # Usage
 To start the application, run the `main.py` file:
 ```bash
@@ -14,7 +21,7 @@ exit()
 
 
 
-# Source Code
+# Source Code Documentation
 
 ## main.py
 The main.py file serves as the entry point for the Higher/Lower card game application. It initialises the game, prompts the user for necessary inputs, sets up the game configuration, and starts the game.
